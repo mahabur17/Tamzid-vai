@@ -5,7 +5,7 @@ export default function PaymentModal({ isOpen, onClose, data }) {
 
   // এখানে আপনার আসল নাম্বারগুলো বসাবেন
   const bkashNumber = "018XXXXXXXX"; 
-  const whatsappNumber = "+88018XXXXXXXX"; // Country code (+88) সহ দিতে হবে
+  const whatsappNumber = "+880 1957-747041"; // Country code (+88) সহ দিতে হবে
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=হ্যালো,%20আমি%20পেমেন্ট%20করেছি।`;
 
   return (
@@ -48,7 +48,7 @@ export default function PaymentModal({ isOpen, onClose, data }) {
               <div className="text-on-surface text-base md:text-lg">
                 পেমেন্ট করা হয়ে গেলে আমাদের হোয়াটসঅ্যাপ নাম্বারে যোগাযোগ করুন।
                 <a 
-                  href={"https://wa.me/01748-845302"} 
+                  href={"https://wa.me/+8801957-747041"} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="mt-2 inline-flex items-center gap-1.5 md:gap-2 bg-[#25D366] text-white px-3 py-2 md:px-4 md:py-2 rounded-xl font-bold hover:shadow-lg transition-all text-sm"
