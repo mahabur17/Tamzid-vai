@@ -5,7 +5,7 @@ export const collegeData = {
     name: 'ঢাকা রেসিডেনসিয়াল মডেল কলেজ',
     type: 'স্কুল ও কলেজ',
     location: 'মোহাম্মদপুর, ঢাকা',
-    bannerImg: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1200',
+    bannerImg: '/images/collegebanner.jpg',
     icon: 'account_balance',
     about: [
       'ঢাকা রেসিডেনসিয়াল মডেল কলেজ বাংলাদেশের অন্যতম শীর্ষস্থানীয় এবং ঐতিহ্যবাহী একটি শিক্ষাপ্রতিষ্ঠান। ১৯৬০ সালে প্রতিষ্ঠিত এই কলেজটি প্রায় ৫২ একর বিশাল জায়গাজুড়ে অবস্থিত।',
@@ -15,7 +15,7 @@ export const collegeData = {
       text: 'রেসিডেনসিয়ালের পরিবেশ একজন শিক্ষার্থীকে শুধু ভালো ছাত্রই নয়, একজন সুশৃঙ্খল মানুষ হিসেবে গড়ে তোলে। এখানকার সুবিশাল ক্যাম্পাস এবং আবাসিক জীবন এক অনন্য অভিজ্ঞতা।',
       author: 'তামজিদ ভাই',
       designation: 'ফাউন্ডার, এডমিশন অ্যাসিস্ট্যান্ট',
-      image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=200'
+      image: '/images/tamzidvai.jpg'
     },
     admissionInfo: [
       { classLevel: '৩য়', title: '৩য় শ্রেণিতে ভর্তি', desc: 'লটারির মাধ্যমে ৩য় শ্রেণিতে শিক্ষার্থী ভর্তি নেওয়া হয়। সাধারণত নভেম্বর-ডিসেম্বর মাসে আবেদন প্রক্রিয়া শুরু হয়।' },
@@ -30,9 +30,9 @@ export const collegeData = {
       { label: 'শাখা', value: 'প্রভাতি ও দিবা' }
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1592284950334-92797669b35b?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600'
+      '/images/drmc2.jpg',
+      '/images/drmc3.jpg',
+      '/images/drmc4.jpg'
     ],
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.5283451648835!2d90.36647181536294!3d23.76413209416551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0a37b089c13%3A0x8929e5a1b32d185e!2sDhaka%20Residential%20Model%20College!5e0!3m2!1sen!2sbd!4v1680000000000!5m2!1sen!2sbd',
     faqs: [
@@ -45,7 +45,7 @@ export const collegeData = {
     name: 'নটর ডেম কলেজ',
     type: 'কলেজ',
     location: 'মতিঝিল, ঢাকা',
-    bannerImg: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1200',
+    bannerImg: '/images/collegebanner.jpg',
     icon: 'school',
     about: [
       'নটর ডেম কলেজ বাংলাদেশের সেরা এবং সবচেয়ে স্বনামধন্য একটি কলেজ। ১৯৪৯ সালে হলিক্রস ফাদারদের দ্বারা এটি প্রতিষ্ঠিত হয়।',
@@ -55,7 +55,7 @@ export const collegeData = {
       text: 'নটর ডেম শুধু বইয়ের বিদ্যা শেখায় না, বরং একজন মানুষকে নিয়মানুবর্তিতা এবং সময়ের মূল্য বুঝতে শেখায়। এখানকার ক্লাব কার্যক্রম তোমার চিন্তার জগতকে প্রসারিত করবে।',
       author: 'তামজিদ ভাই',
       designation: 'ফাউন্ডার, এডমিশন অ্যাসিস্ট্যান্ট',
-      image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=200'
+      image: '/images/tamzidvai.jpg'
     },
     admissionInfo: [
       { classLevel: '১১শ', title: 'প্রাথমিক আবেদন', desc: 'এসএসসিতে নির্দিষ্ট জিপিএ (সাধারণত বিজ্ঞানে জিপিএ ৫.০০) প্রাপ্ত শিক্ষার্থীরা অনলাইনে নটর ডেম কলেজের নিজস্ব ওয়েবসাইটে আবেদন করতে পারে।' },
@@ -70,9 +70,9 @@ export const collegeData = {
       { label: 'ধরন', value: 'বয়েজ কলেজ' }
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1592284950334-92797669b35b?auto=format&fit=crop&q=80&w=600'
+      '/images/ndc1.jpg',
+      '/images/ndc2.jpg',
+      '/images/ndc3.jpg'
     ],
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.54457788484!2d90.41940981536214!3d23.72795899554767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85c36690457%3A0xa971f11c81a296b!2sNotre%20Dame%20College!5e0!3m2!1sen!2sbd!4v1680000000001!5m2!1sen!2sbd',
     faqs: [
@@ -85,7 +85,7 @@ export const collegeData = {
     name: 'হলিক্রস কলেজ',
     type: 'কলেজ',
     location: 'তেজগাঁও, ঢাকা',
-    bannerImg: 'https://images.unsplash.com/photo-1592284950334-92797669b35b?auto=format&fit=crop&q=80&w=1200',
+    bannerImg: '/images/collegebanner.jpg',
     icon: 'local_library',
     about: [
       'হলিক্রস কলেজ বাংলাদেশের মেয়েদের জন্য একটি স্বনামধন্য শিক্ষাপ্রতিষ্ঠান। ১৯৫০ সালে হলিক্রস সিস্টারদের উদ্যোগে এই কলেজটি প্রতিষ্ঠিত হয়।',
@@ -95,7 +95,7 @@ export const collegeData = {
       text: 'হলিক্রস কলেজ শুধু ভালো ফলাফলই দেয় না, বরং একজন মেয়েকে আত্মবিশ্বাসী এবং স্বাবলম্বী মানুষ হিসেবে গড়ে তোলার সেরা প্ল্যাটফর্ম এটি।',
       author: 'তামজিদ ভাই',
       designation: 'ফাউন্ডার, এডমিশন অ্যাসিস্ট্যান্ট',
-      image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=200'
+      image: '/images/tamzidvai.jpg'
     },
     admissionInfo: [
       { classLevel: '১১শ', title: 'আবেদন প্রক্রিয়া', desc: 'এসএসসি পরীক্ষার ফলাফল প্রকাশের পর নিজস্ব ওয়েবসাইটের মাধ্যমে নির্দিষ্ট জিপিএ ধারীদের কাছ থেকে আবেদন গ্রহণ করা হয়।' },
@@ -110,9 +110,9 @@ export const collegeData = {
       { label: 'ক্লাব', value: 'প্রায় ১৫টি' }
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1592284950334-92797669b35b?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600'
+      '/images/holy1.jpg',
+      '/images/holy2.jpg',
+      '/images/holy3.jpg'
     ],
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.849202636287!2d90.39009801536272!3d23.7527622946049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a28723f3eb%3A0x6e9f16ef06fa3d9f!2sHoly%20Cross%20College!5e0!3m2!1sen!2sbd!4v1680000000002!5m2!1sen!2sbd',
     faqs: [
@@ -125,7 +125,7 @@ export const collegeData = {
     name: 'সেন্ট জোসেফ উচ্চ মাধ্যমিক বিদ্যালয়',
     type: 'স্কুল ও কলেজ',
     location: 'মোহাম্মদপুর, ঢাকা',
-    bannerImg: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1200',
+    bannerImg: '/images/collegebanner.jpg',
     icon: 'emoji_events',
     about: [
       'সেন্ট জোসেফ উচ্চ মাধ্যমিক বিদ্যালয় ঢাকার আসাদ গেট, মোহাম্মদপুরে অবস্থিত একটি স্বনামধন্য শিক্ষাপ্রতিষ্ঠান। ১৯৫৪ সালে এটি প্রতিষ্ঠিত হয়।',
@@ -135,7 +135,7 @@ export const collegeData = {
       text: 'সেন্ট জোসেফের সুশৃঙ্খল পরিবেশ আর এক্সট্রা-কারিকুলার অ্যাক্টিভিটিজ একজন ছাত্রকে দেশের সেরা বিশ্ববিদ্যালয়ে যাওয়ার জন্য মানসিকভাবে প্রস্তুত করে।',
       author: 'তামজিদ ভাই',
       designation: 'ফাউন্ডার, এডমিশন অ্যাসিস্ট্যান্ট',
-      image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=200'
+      image: '/images/tamzidvai.jpg'
     },
     admissionInfo: [
       { classLevel: '৩য়', title: 'স্কুল শাখায় ভর্তি', desc: 'সাধারণত ৩য় শ্রেণিতে লিখিত ও মৌখিক পরীক্ষার মাধ্যমে লটারির ভিত্তিতে শিক্ষার্থী বাছাই করা হয়।' },
@@ -150,9 +150,9 @@ export const collegeData = {
       { label: 'খেলাধুলা', value: 'বিশাল মাঠ ও ইনডোর সুবিধা' }
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1592284950334-92797669b35b?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600'
+      '/images/joseph1.jpg',
+      '/images/joseph2.jpg',
+      '/images/joseph3.jpg'
     ],
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8105026938995!2d90.3698506153627!3d23.754164694553535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf516a27546f%3A0x1d5d1ea8d1d81745!2sSt.%20Joseph%20Higher%20Secondary%20School!5e0!3m2!1sen!2sbd!4v1680000000003!5m2!1sen!2sbd',
     faqs: [
@@ -165,7 +165,7 @@ export const collegeData = {
     name: 'আইডিয়াল স্কুল অ্যান্ড কলেজ',
     type: 'স্কুল ও কলেজ',
     location: 'মতিঝিল, ঢাকা',
-    bannerImg: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1200',
+    bannerImg: '/images/collegebanner.jpg',
     icon: 'auto_stories',
     about: [
       'আইডিয়াল স্কুল অ্যান্ড কলেজ (সাবেক মতিঝিল আইডিয়াল স্কুল) ঢাকার অন্যতম জনপ্রিয় একটি শিক্ষাপ্রতিষ্ঠান। ১৯৬৫ সালে এটি প্রতিষ্ঠিত হয়।',
@@ -175,7 +175,7 @@ export const collegeData = {
       text: 'যাদের মূল লক্ষ্য বোর্ড পরীক্ষায় দুর্দান্ত ফলাফল করে বুয়েট বা মেডিকেলে জায়গা করে নেওয়া, তাদের জন্য আইডিয়াল অন্যতম সেরা একটি পছন্দ।',
       author: 'তামজিদ ভাই',
       designation: 'ফাউন্ডার, এডমিশন অ্যাসিস্ট্যান্ট',
-      image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=200'
+      image: '/images/tamzidvai.jpg'
     },
     admissionInfo: [
       { classLevel: 'স্কুল', title: 'স্কুল শাখায় ভর্তি', desc: 'সরকারি নিয়মানুযায়ী প্রথম শ্রেণিতে লটারির মাধ্যমে এবং অন্যান্য শ্রেণিতে আসন ফাঁকা থাকা সাপেক্ষে ভর্তি নেওয়া হয়।' },
@@ -190,9 +190,9 @@ export const collegeData = {
       { label: 'ভর্তি পদ্ধতি', value: 'বোর্ড মেরিট (কলেজ)' }
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1592284950334-92797669b35b?auto=format&fit=crop&q=80&w=600'
+      '/images/idealbanner.jpg',
+      '/images/ideal3.jpg',
+      '/images/ideal2.jpg'
     ],
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.417242167732!2d90.42080351536224!3d23.73252519537937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85a36338fb1%3A0xd6ef70e4daee1d44!2sIdeal%20School%20%26%20College%2C%20Motijheel!5e0!3m2!1sen!2sbd!4v1680000000004!5m2!1sen!2sbd',
     faqs: [
@@ -205,7 +205,7 @@ export const collegeData = {
     name: 'ভিকারুননিসা নূন স্কুল অ্যান্ড কলেজ',
     type: 'স্কুল ও কলেজ',
     location: 'বেইলি রোড, ঢাকা',
-    bannerImg: 'https://images.unsplash.com/photo-1592284950334-92797669b35b?auto=format&fit=crop&q=80&w=1200',
+    bannerImg: '/images/collegebanner.jpg',
     icon: 'import_contacts',
     about: [
       'ভিকারুননিসা নূন স্কুল অ্যান্ড কলেজ বাংলাদেশের মেয়েদের জন্য অন্যতম সেরা একটি শিক্ষাপ্রতিষ্ঠান। ১৯৫২ সালে এটি প্রতিষ্ঠিত হয়।',
@@ -215,7 +215,7 @@ export const collegeData = {
       text: 'ভিকারুনননিসার একটি শক্তিশালী অ্যালামনাই নেটওয়ার্ক এবং সাংস্কৃতিক পরিবেশ রয়েছে, যা ছাত্রীদের আত্মবিশ্বাস ও লিডারশিপ কোয়ালিটি বাড়াতে দারুণ সাহায্য করে।',
       author: 'তামজিদ ভাই',
       designation: 'ফাউন্ডার, এডমিশন অ্যাসিস্ট্যান্ট',
-      image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=200'
+      image: '/images/tamzidvai.jpg'
     },
     admissionInfo: [
       { classLevel: 'স্কুল', title: 'প্রথম শ্রেণিতে ভর্তি', desc: 'সরকারি নিয়ম অনুযায়ী অনলাইনে আবেদনের মাধ্যমে লটারি প্রক্রিয়ায় প্রথম শ্রেণিতে ছাত্রী ভর্তি করা হয়।' },
@@ -230,9 +230,9 @@ export const collegeData = {
       { label: 'শিক্ষা মাধ্যম', value: 'বাংলা ও ইংরেজি' }
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1592284950334-92797669b35b?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600',
-      'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600'
+      '/images/vq1.png',
+      '/images/vq2.jpg',
+      '/images/vq3.jpg'
     ],
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.270630767576!2d90.40263651536236!3d23.737841595180635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f60d625555%3A0xc66c1b3e9db33608!2sViqarunnisa%20Noon%20School%20%26%20College!5e0!3m2!1sen!2sbd!4v1680000000005!5m2!1sen!2sbd',
     faqs: [

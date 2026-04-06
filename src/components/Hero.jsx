@@ -4,10 +4,10 @@ import React, { useState, useEffect } from "react";
 export default function Hero() {
   // নিশ্চিতভাবে এখানে ৪টি ছবির লিংক দেওয়া আছে
   const heroImages = [
-    "https://scontent.fdac151-1.fna.fbcdn.net/v/t39.30808-6/557711084_2083962479023741_7258371192955033680_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFdpyZI5j73MvP7YK2hQyCevdbwvgAIiNG91vC-AAiI0TOqxIDvHLg1q98Ufyg9XrxfGdVYT5Wjsz2k7RdQ6T0k&_nc_ohc=mhHR5AJA7ccQ7kNvwHarvou&_nc_oc=AdrUxbuk39XMFVxEOhHZEUVTmvANJWi_G8R9nKXmVWXSbREZI0k6S3-wS3ZydyF-tXM&_nc_zt=23&_nc_ht=scontent.fdac151-1.fna&_nc_gid=pqw-d1hB7qyrRes4lZd5Pw&_nc_ss=7a3a8&oh=00_Af3WD0fygxBcCuyFIXYh-mIj6vUUII6G-PHF0yDNtgy0BQ&oe=69D4077B",
-    "https://scontent.fdac151-1.fna.fbcdn.net/v/t39.30808-6/600221710_2143235533096435_2042593270027149638_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeEoMHFC4d4oFERcdqT_xrlLXik80cqAw6deKTzRyoDDp6ycSMKwSDNTPcu9tVeWDJzHXRkWb4dM5zHWAEpProUA&_nc_ohc=7XDZG_XFaZMQ7kNvwFUWa8b&_nc_oc=AdqsSbAcd6Fasa9atOejfnv2AjLvniPSYxGQ2prLE2KXDvloyHY8Zrm6KSRbKwkeGXI&_nc_zt=23&_nc_ht=scontent.fdac151-1.fna&_nc_gid=dZg7uShkRQz7H3S5iIRtfw&_nc_ss=7a3a8&oh=00_Af2p5ryogwLNlLw7Flt_X0A4vrus60De63r1fz3gulR3Aw&oe=69D99C61",
-    "https://scontent.fdac151-1.fna.fbcdn.net/v/t39.30808-6/557599648_2083962779023711_3513442784134947241_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGIeXUrBaANqIEN25dsKR2CxOw8dkKUzuXE7Dx2QpTO5f4W0DtV6VsVbGUkYZAtVxAJhcyq2JkzgmMj5kRt2yYW&_nc_ohc=O_5NSQNo0gEQ7kNvwFq6Uat&_nc_oc=AdoJ09nJgYHxaelPJNHJDAjuGVGOlxQJAPrGJVnT1mcVZKE2epXIuBUBaj_3fnySSow&_nc_zt=23&_nc_ht=scontent.fdac151-1.fna&_nc_gid=WAnI51lKR2oK-SI-1fihNQ&_nc_ss=7a3a8&oh=00_Af2RAS4uMl4fzhsu8hLXvW0UUj0Ay-LlZYgtkUIDeYs1oA&oe=69D9A02E",
-    "https://scontent.fdac151-1.fna.fbcdn.net/v/t39.30808-6/558771059_2083961875690468_8049303050299819094_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFQ9bbyYOjzun4h4ATrFSXORi4elP2SeYlGLh6U_ZJ5iUusxQq4CWaIWhAmwyNKkcAMRGnkeTj-GGplrFtJrUSJ&_nc_ohc=-2yUJtpDFWQQ7kNvwHIZhdV&_nc_oc=Ado89C75zspotsLR-IZ2VFTxr7NYpF7SEQecgT5PQnkRW_6Mk2duI5IjKALPtA87HQs&_nc_zt=23&_nc_ht=scontent.fdac151-1.fna&_nc_gid=0I0fXyBMrQUCbLsjQy-HDA&_nc_ss=7a3a8&oh=00_Af0KHt5cplqkzwqgm54yF7yLRah9d03jDlhc8ogMLfEV8Q&oe=69D9B0EC"
+    "/images/hero1.jpg",
+    "/images/hero2.jpg",
+    "/images/hero3.jpg",
+    "/images/hero4.jpg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

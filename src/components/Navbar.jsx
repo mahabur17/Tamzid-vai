@@ -35,7 +35,7 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   // হোয়াটসঅ্যাপ নাম্বার (Country Code সহ)
-  const whatsappNumber = "+8801748845302";
+  const whatsappNumber = "+880 1957-747041";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (

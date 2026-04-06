@@ -2,7 +2,7 @@
 import React from 'react';
 
 export default function FoundersMessage() {
-  const founderImageUrl = "https://scontent.fdac151-1.fna.fbcdn.net/v/t39.30808-6/542760564_2057942524959070_7492125585090781052_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeHdrraZgGiNAIZoC4orhjJPOe_ZploVgLE579mmWhWAsa5oHF-Y9_U2LQL1FL2h4eKh1GbvW2RPEBs0lHp_JNXd&_nc_ohc=HZrtxtaHoEcQ7kNvwGL5fN9&_nc_oc=Adp4e1dPTMDi6HhHseWy9CdQkPSzqPEcBsSpCn9rldRZWQM0YrmeTHh2PxHRo70etCM&_nc_zt=23&_nc_ht=scontent.fdac151-1.fna&_nc_gid=6owehOZ9zxwFjHzw8LELEA&_nc_ss=7a3a8&oh=00_Af2Mdqbpmz_cQxbbPOCY-u6yRyI8K9z7zuem64kMtR2yVg&oe=69D40CC4";
+  const founderImageUrl = "/images/tamzidvai.jpg"; // প্রতিষ্ঠাতার ছবি URL
 
   return (
     // মোবাইলের জন্য py-12 করা হয়েছে স্পেসিং কমানোর জন্য

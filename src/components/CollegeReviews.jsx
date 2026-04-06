@@ -8,42 +8,42 @@ const colleges = [
     name: 'ঢাকা রেসিডেনসিয়াল মডেল কলেজ',
     type: 'স্কুল ও কলেজ',
     location: 'মোহাম্মদপুর, ঢাকা',
-    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600',
+    image: '/images/drmc1.png',
   },
   {
     id: 'ndc',
     name: 'নটর ডেম কলেজ',
     type: 'কলেজ',
     location: 'মতিঝিল, ঢাকা',
-    image: 'https://images.unsplash.com/photo-1592284950334-92797669b35b?auto=format&fit=crop&q=80&w=600',
+    image: '/images/ndcbanner.png',
   },
   {
     id: 'hcc',
     name: 'হলিক্রস কলেজ',
     type: 'কলেজ',
     location: 'তেজগাঁও, ঢাকা',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600',
+    image: '/images/holybanner.jpg',
   },
   {
     id: 'sjc',
     name: 'সেন্ট জোসেফ কলেজ',
     type: 'স্কুল ও কলেজ',
     location: 'মোহাম্মদপুর, ঢাকা',
-    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600',
+    image: '/images/josephbanner.jpg',
   },
   {
     id: 'ideal',
     name: 'আইডিয়াল স্কুল এন্ড কলেজ',
     type: 'স্কুল ও কলেজ',
     location: 'মতিঝিল, ঢাকা',
-    image: 'https://images.unsplash.com/photo-1592284950334-92797669b35b?auto=format&fit=crop&q=80&w=600',
+    image: '/images/ideal1.jpg',
   },
   {
     id: 'vnsc',
     name: 'ভিকারুননিসা নূন স্কুল',
     type: 'স্কুল ও কলেজ',
     location: 'বেইলি রোড, ঢাকা',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600',
+    image: '/images/vqbanner.jpg',
   }
 ];
 
