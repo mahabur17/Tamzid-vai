@@ -1,5 +1,5 @@
 // src/components/Navbar.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Navbar() {
@@ -17,8 +17,25 @@ export default function Navbar() {
     setIsMenuOpen(false);
   };
 
+  // স্ক্রল করলে মেনু বন্ধ হওয়ার লজিক
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    // স্ক্রল ইভেন্ট লিসেনার যুক্ত করা
+    window.addEventListener('scroll', handleScroll);
+
+    // ক্লিনআপ ফাংশন (কম্পোনেন্ট আনমাউন্ট হলে লিসেনার রিমুভ করবে)
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isMenuOpen]);
+
   // হোয়াটসঅ্যাপ নাম্বার (Country Code সহ)
-  const whatsappNumber = "+8801957747041";
+  const whatsappNumber = "+8801748845302";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
