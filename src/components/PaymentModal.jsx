@@ -5,15 +5,19 @@ export default function PaymentModal({ isOpen, onClose, data }) {
 
   // এখানে আপনার আসল নাম্বারগুলো বসাবেন
   const bkashNumber = "018XXXXXXXX"; 
-  const whatsappNumber = "+880 1957-747041"; // Country code (+88) সহ দিতে হবে
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=হ্যালো,%20আমি%20পেমেন্ট%20করেছি।`;
+  
+  // হোয়াটসঅ্যাপ নাম্বার (কোনো স্পেস, + বা - ছাড়া)
+  const whatsappNumber = "8801957747041"; 
+  
+  // সরাসরি WhatsApp API লিংক (সাথে অটোমেটিক মেসেজ)
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=হ্যালো,%20আমি%20পেমেন্ট%20করেছি।`;
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      {/* Modal Box - flex-col এবং max-h-[90vh] যোগ করা হয়েছে */}
+      {/* Modal Box - flex-col এবং max-h-[90vh] যোগ করা হয়েছে */}
       <div className="bg-surface rounded-3xl shadow-2xl w-full max-w-lg overflow-hidden flex flex-col max-h-[90vh] border border-outline-variant/20 transform transition-all duration-300">
         
-        {/* Header - flex-shrink-0 যোগ করা হয়েছে যাতে হেডার ছোট না হয়ে যায় */}
+        {/* Header - flex-shrink-0 যোগ করা হয়েছে যাতে হেডার ছোট না হয়ে যায় */}
         <div className="bg-primary px-5 py-4 md:px-6 md:py-5 flex justify-between items-center text-white flex-shrink-0">
           <h3 className="text-lg md:text-xl font-bold flex items-center gap-2">
             <span className="material-symbols-outlined text-xl md:text-2xl">payments</span>
@@ -27,7 +31,7 @@ export default function PaymentModal({ isOpen, onClose, data }) {
           </button>
         </div>
 
-        {/* Body - overflow-y-auto যোগ করা হয়েছে স্ক্রল করার জন্য */}
+        {/* Body - overflow-y-auto যোগ করা হয়েছে স্ক্রল করার জন্য */}
         <div className="p-5 md:p-8 overflow-y-auto flex-1">
           <p className="text-on-surface-variant mb-5 md:mb-6 text-base md:text-lg font-medium border-b border-outline-variant/20 pb-3 md:pb-4">
             প্রক্রিয়াটি সম্পন্ন করতে নিচের ধাপগুলো অনুসরণ করুন:
@@ -48,7 +52,7 @@ export default function PaymentModal({ isOpen, onClose, data }) {
               <div className="text-on-surface text-base md:text-lg">
                 পেমেন্ট করা হয়ে গেলে আমাদের হোয়াটসঅ্যাপ নাম্বারে যোগাযোগ করুন।
                 <a 
-                  href={"https://wa.me/+8801957-747041"} 
+                  href={whatsappLink} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="mt-2 inline-flex items-center gap-1.5 md:gap-2 bg-[#25D366] text-white px-3 py-2 md:px-4 md:py-2 rounded-xl font-bold hover:shadow-lg transition-all text-sm"

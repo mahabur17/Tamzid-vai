@@ -17,7 +17,7 @@ export default function Navbar() {
     setIsMenuOpen(false);
   };
 
-  // স্ক্রল করলে মেনু বন্ধ হওয়ার লজিক
+  // স্ক্রল করলে মেনু বন্ধ হওয়ার লজিক
   useEffect(() => {
     const handleScroll = () => {
       if (isMenuOpen) {
@@ -25,18 +25,14 @@ export default function Navbar() {
       }
     };
 
-    // স্ক্রল ইভেন্ট লিসেনার যুক্ত করা
     window.addEventListener('scroll', handleScroll);
-
-    // ক্লিনআপ ফাংশন (কম্পোনেন্ট আনমাউন্ট হলে লিসেনার রিমুভ করবে)
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [isMenuOpen]);
 
-  // হোয়াটসঅ্যাপ নাম্বার (Country Code সহ)
-  const whatsappNumber = "+880 1957-747041";
-  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+  // একদম ১০০% কাজ করবে এমন WhatsApp লিংক
+  const whatsappLink = "https://api.whatsapp.com/send?phone=8801957747041";
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#f6faf7]/90 backdrop-blur-md shadow-sm border-b border-outline-variant/10">
@@ -72,7 +68,6 @@ export default function Navbar() {
             aria-label="Chat on WhatsApp"
             className="flex items-center justify-center w-10 h-10 bg-[#25D366] text-white rounded-full shadow-[0_4px_10px_rgba(37,211,102,0.4)] hover:shadow-[0_6px_15px_rgba(37,211,102,0.6)] active:scale-95 transition-all duration-300"
           >
-            {/* WhatsApp SVG Icon */}
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 448 512" 
@@ -88,11 +83,9 @@ export default function Navbar() {
             className="text-primary rounded-xl hover:bg-primary/5 transition-colors focus:outline-none relative w-10 h-10 flex items-center justify-center"
             aria-label="Toggle Menu"
           >
-            {/* Menu Icon */}
             <span className={`material-symbols-outlined text-3xl absolute transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-0 rotate-90 scale-50' : 'opacity-100 rotate-0 scale-100'}`}>
               menu
             </span>
-            {/* Close Icon */}
             <span className={`material-symbols-outlined text-3xl absolute transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-50'}`}>
               close
             </span>
@@ -100,7 +93,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu (Dropdown) */}
+      {/* Mobile Menu */}
       <div className={`absolute top-full left-0 w-full bg-white shadow-xl border-b border-outline-variant/10 md:hidden transition-all duration-300 ease-in-out transform origin-top ${
         isMenuOpen 
           ? 'opacity-100 scale-y-100 visible h-auto'
