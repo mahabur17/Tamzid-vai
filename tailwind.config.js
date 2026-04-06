@@ -1,0 +1,66 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "on-surface-variant": "#414844",
+        "on-surface": "#181d1b",
+        "on-primary-fixed": "#002114",
+        "surface-bright": "#f6faf7",
+        "on-error": "#ffffff",
+        "on-tertiary-container": "#75b393",
+        "background": "#f6faf7",
+        "on-tertiary-fixed-variant": "#0e5138",
+        "error": "#ba1a1a",
+        "surface-container-low": "#f1f5f2",
+        "inverse-on-surface": "#eef2ef",
+        "on-secondary-container": "#4a6b5e",
+        "on-primary": "#ffffff",
+        "on-secondary": "#ffffff",
+        "primary-container": "#1b4332",
+        "tertiary-fixed": "#b1f0ce",
+        "surface-dim": "#d7dbd8",
+        "inverse-primary": "#a5d0b9",
+        "surface": "#f6faf7",
+        "primary-fixed-dim": "#a5d0b9",
+        "on-background": "#181d1b",
+        "tertiary": "#002d1c",
+        "surface-variant": "#dfe3e1",
+        "surface-container-lowest": "#ffffff",
+        "secondary": "#446558",
+        "primary": "#012d1d",
+        "on-primary-fixed-variant": "#274e3d",
+        "on-tertiary-fixed": "#002114",
+        "inverse-surface": "#2d3130",
+        "on-secondary-fixed-variant": "#2d4d41",
+        "on-error-container": "#93000a",
+        "surface-container": "#ebefec",
+        "outline-variant": "#c1c8c2",
+        "outline": "#717973",
+        "on-tertiary": "#ffffff",
+        "surface-container-highest": "#dfe3e1",
+        "surface-container-high": "#e5e9e6",
+        "secondary-fixed-dim": "#abcebf",
+        "tertiary-fixed-dim": "#95d4b3",
+        "primary-fixed": "#c1ecd4",
+        "on-secondary-fixed": "#002117",
+        "secondary-fixed": "#c6ebda",
+        "tertiary-container": "#00452e",
+        "surface-tint": "#3f6653",
+        "on-primary-container": "#86af99",
+        "secondary-container": "#c6ebda",
+        "error-container": "#ffdad6"
+      },
+      fontFamily: {
+        "headline": ["Plus Jakarta Sans", "sans-serif"],
+        "body": ["Plus Jakarta Sans", "sans-serif"]
+      }
+    }
+  },
+  plugins: [],
+}
