@@ -5,34 +5,34 @@ export const courseData = {
     title: "Class 1 Admission Batch",
     description: "প্রথম শ্রেণিতে দেশের সেরা স্কুলগুলোতে ভর্তি পরীক্ষার জন্য বিশেষ গাইডলাইন।",
     schoolDesc1: "প্রথম শ্রেণির ভর্তি পরীক্ষা বাচ্চাদের জন্য একদম নতুন অভিজ্ঞতা। সেন্ট জোসেফ, হলিক্রস এর মতো স্কুলগুলোর জন্য আমাদের এই ব্যাচ।",
-    schoolDesc2: "বাচ্চাদের খেলার ছলে বর্ণমালা, সংখ্যা ও সাধারণ জ্ঞান শেখানো হয়।",
+    schoolDesc2: "বাচ্চাদের খেলার ছলে বর্ণমালা, সংখ্যা ও সাধারণ জ্ঞান শেখানো হয়।",
     highlights: ["সপ্তাহে ২ দিন ক্লাস", "মজার ছলে শেখা", "প্যারেন্টস মিটিং", "কালারফুল শিট"],
     pdfs: [
-      { title: "Bangla Basic", desc: "স্বরবর্ণ ও ব্যঞ্জনবর্ণ" },
-      { title: "English ABC", desc: "Alphabets" }
+      { title: "Bangla Basic", desc: "স্বরবর্ণ ও ব্যঞ্জনবর্ণ", link: "/pdfs/demo.pdf" },
+      { title: "English ABC", desc: "Alphabets", link: "/pdfs/demo.pdf" }
     ],
     videos: [
-      { subject: "Bangla", title: "ছড়ায় ছড়ায় অ আ", desc: "মজার ছড়া।" }
+      { subject: "Bangla", title: "ছড়ায় ছড়ায় অ আ", desc: "মজার ছড়া।" }
     ],
     questions: [
-      { title: "মডেল টেস্ট ১", size: "১ এমবি" }
+      { title: "মডেল টেস্ট ১", size: "১ এমবি", link: "/pdfs/demo.pdf" }
     ]
   },
   "class-2": {
     title: "Class 2 Admission Batch",
-    description: "দ্বিতীয় শ্রেণিতে ভর্তির জন্য বেসিক স্ট্রং করার এক্সক্লুসিভ ব্যাচ।",
-    schoolDesc1: "দেশের স্বনামধন্য স্কুলগুলোতে দ্বিতীয় শ্রেণিতে আসন সীমিত থাকে, তাই প্রতিযোগিতা অনেক বেশি।",
+    description: "দ্বিতীয় শ্রেণিতে ভর্তির জন্য বেসিক স্ট্রং করার এক্সক্লুসিভ ব্যাচ।",
+    schoolDesc1: "দেশের স্বনামধন্য স্কুলগুলোতে দ্বিতীয় শ্রেণিতে আসন সীমিত থাকে, তাই প্রতিযোগিতা অনেক বেশি।",
     schoolDesc2: "এই ব্যাচে আমরা বাচ্চাদের রিডিং, রাইটিং এবং বেসিক অংকের ওপর জোর দেই।",
     highlights: ["সপ্তাহে ৩ দিন ক্লাস", "মান্থলি টেস্ট", "স্পেশাল শিট", "মেন্টরিং"],
     pdfs: [
-      { title: "Bangla", desc: "শব্দ ও বাক্য গঠন" },
-      { title: "Math", desc: "যোগ ও বিয়োগ" }
+      { title: "Bangla", desc: "শব্দ ও বাক্য গঠন", link: "/pdfs/demo.pdf" },
+      { title: "Math", desc: "যোগ ও বিয়োগ", link: "/pdfs/demo.pdf" }
     ],
     videos: [
       { subject: "English", title: "Word Making", desc: "সহজে শব্দ তৈরি।" }
     ],
     questions: [
-      { title: "বিগত সালের প্রশ্ন", size: "১.৫ এমবি" }
+      { title: "বিগত সালের প্রশ্ন", size: "১.৫ এমবি", link: "/pdfs/demo.pdf" }
     ]
   },
   "class-3": {
@@ -42,10 +42,10 @@ export const courseData = {
     schoolDesc2: "ছোটদের পড়াশোনার প্রতি যেন ভীতি তৈরি না হয়, সেজন্য তামজিদ একাডেমির অভিজ্ঞ শিক্ষকমণ্ডলী খেলাচ্ছলে এবং অত্যন্ত যত্ন সহকারে প্রতিটি বিষয় বুঝিয়ে থাকেন।",
     highlights: ["সপ্তাহে ৩ দিন লাইভ/অফলাইন ক্লাস", "স্পেশাল কালারফুল লেকচার শিট", "সাপ্তাহিক ও মাসিক মেধা যাচাই পরীক্ষা", "প্যারেন্টস মিটিং ও আপডেট"],
     pdfs: [
-      { title: "Bangla Lecture - 01", desc: "ভাষা ও ব্যাকরণ পরিচিতি" },
-      { title: "English Lecture - 01", desc: "Alphabet & Basic Words" },
-      { title: "Math Lecture - 01", desc: "সংখ্যা পরিচিতি ও যোগ-বিয়োগ" },
-      { title: "General Knowledge", desc: "বাংলাদেশ ও বিশ্ব পরিচিতি" }
+      { title: "Bangla Lecture - 01", desc: "ভাষা ও ব্যাকরণ পরিচিতি", link: "/pdfs/demo.pdf" },
+      { title: "English Lecture - 01", desc: "Alphabet & Basic Words", link: "/pdfs/demo.pdf" },
+      { title: "Math Lecture - 01", desc: "সংখ্যা পরিচিতি ও যোগ-বিয়োগ", link: "/pdfs/demo.pdf" },
+      { title: "General Knowledge", desc: "বাংলাদেশ ও বিশ্ব পরিচিতি", link: "/pdfs/demo.pdf" }
     ],
     videos: [
       { subject: "Bangla", title: "বাংলা ব্যাকরণ বেসিক ক্লাস", desc: "ভর্তি পরীক্ষার জন্য গুরুত্বপূর্ণ কিছু নিয়ম।" },
@@ -53,44 +53,44 @@ export const courseData = {
       { subject: "Math", title: "গণিতের সহজ শর্টকাট টেকনিক", desc: "সহজে যোগ, বিয়োগ ও গুণের নিয়ম।" }
     ],
     questions: [
-      { title: "আইডিয়াল স্কুল ভর্তি প্রশ্ন - ২০২৩", size: "২ এমবি" },
-      { title: "ভিকারুননিসা স্কুল ভর্তি প্রশ্ন - ২০২৩", size: "১.৫ এমবি" },
-      { title: "সেন্ট জোসেফ ভর্তি প্রশ্ন - ২০২২", size: "২.১ এমবি" },
-      { title: "সকল স্কুলের মডেল টেস্ট কালেকশন", size: "৫ এমবি" }
+      { title: "আইডিয়াল স্কুল ভর্তি প্রশ্ন - ২০২৩", size: "২ এমবি", link: "/pdfs/demo.pdf" },
+      { title: "ভিকারুননিসা স্কুল ভর্তি প্রশ্ন - ২০২৩", size: "১.৫ এমবি", link: "/pdfs/demo.pdf" },
+      { title: "সেন্ট জোসেফ ভর্তি প্রশ্ন - ২০২২", size: "২.১ এমবি", link: "/pdfs/demo.pdf" },
+      { title: "সকল স্কুলের মডেল টেস্ট কালেকশন", size: "৫ এমবি", link: "/pdfs/demo.pdf" }
     ]
   },
   "class-4": {
     title: "Class 4 Admission Batch",
     description: "চতুর্থ শ্রেণিতে স্কুল পরিবর্তন বা নতুন স্কুলে ভর্তির সেরা প্রস্তুতি।",
-    schoolDesc1: "চতুর্থ শ্রেণির সিলেবাস অনুযায়ী আইডিয়াল, ভিকারুননিসা ও অন্যান্য স্কুলের জন্য প্রস্তুতি।",
-    schoolDesc2: "এই ব্যাচে প্রতিটি বিষয়ের বেসিক ক্লিয়ার করার ওপর জোর দেওয়া হয়।",
-    highlights: ["সপ্তাহে ৩ দিন ক্লাস", "বিষয়ভিত্তিক পরীক্ষা", "সাজেশন প্রদান", "প্রবলেম সলভিং ক্লাস"],
+    schoolDesc1: "চতুর্থ শ্রেণির সিলেবাস অনুযায়ী আইডিয়াল, ভিকারুননিসা ও অন্যান্য স্কুলের জন্য প্রস্তুতি।",
+    schoolDesc2: "এই ব্যাচে প্রতিটি বিষয়ের বেসিক ক্লিয়ার করার ওপর জোর দেওয়া হয়।",
+    highlights: ["সপ্তাহে ৩ দিন ক্লাস", "বিষয়ভিত্তিক পরীক্ষা", "সাজেশন প্রদান", "প্রবলেম সলভিং ক্লাস"],
     pdfs: [
-      { title: "Bangla Grammar", desc: "পদ প্রকরণ" },
-      { title: "Math", desc: "গুণ ও ভাগ" }
+      { title: "Bangla Grammar", desc: "পদ প্রকরণ", link: "/pdfs/demo.pdf" },
+      { title: "Math", desc: "গুণ ও ভাগ", link: "/pdfs/demo.pdf" }
     ],
     videos: [
-      { subject: "Math", title: "ভাগের সহজ নিয়ম", desc: "সহজে ভাগ করা।" }
+      { subject: "Math", title: "ভাগের সহজ নিয়ম", desc: "সহজে ভাগ করা।" }
     ],
     questions: [
-      { title: "বিগত সালের প্রশ্ন", size: "২ এমবি" }
+      { title: "বিগত সালের প্রশ্ন", size: "২ এমবি", link: "/pdfs/demo.pdf" }
     ]
   },
   "class-5": {
     title: "Class 5 Admission Batch",
     description: "পঞ্চম শ্রেণিতে স্কলারশিপ ও ভালো স্কুলে ভর্তির প্রস্তুতি।",
     schoolDesc1: "পঞ্চম শ্রেণির শিক্ষার্থীদের জন্য বিশেষ গাইডলাইন ও শর্ট টেকনিক।",
-    schoolDesc2: "বৃত্তি পরীক্ষা এবং অ্যাডমিশন—উভয় ক্ষেত্রেই এই ব্যাচটি সাহায্য করবে।",
-    highlights: ["সপ্তাহে ৪ দিন ক্লাস", "মডেল টেস্ট", "পিডিএফ নোটস", "ডাউট ক্লিয়ারিং সেশন"],
+    schoolDesc2: "বৃত্তি পরীক্ষা এবং অ্যাডমিশন—উভয় ক্ষেত্রেই এই ব্যাচটি সাহায্য করবে।",
+    highlights: ["সপ্তাহে ৪ দিন ক্লাস", "মডেল টেস্ট", "পিডিএফ নোটস", "ডাউট ক্লিয়ারিং সেশন"],
     pdfs: [
-      { title: "Science", desc: "আমাদের পরিবেশ" },
-      { title: "Math", desc: "ভগ্নাংশ" }
+      { title: "Science", desc: "আমাদের পরিবেশ", link: "/pdfs/demo.pdf" },
+      { title: "Math", desc: "ভগ্নাংশ", link: "/pdfs/demo.pdf" }
     ],
     videos: [
       { subject: "Science", title: "পরিবেশ দূষণ", desc: "বিজ্ঞানের সহজ পাঠ।" }
     ],
     questions: [
-      { title: "মডেল টেস্ট পেপার", size: "৩ এমবি" }
+      { title: "মডেল টেস্ট পেপার", size: "৩ এমবি", link: "/pdfs/demo.pdf" }
     ]
   },
   "class-6": {
@@ -100,96 +100,96 @@ export const courseData = {
     schoolDesc2: "গণিত ও ইংরেজির বেসিক শক্ত করার পাশাপাশি আমরা শিক্ষার্থীদের টাইম ম্যানেজমেন্ট এবং পরীক্ষার কৌশল শিখিয়ে থাকি।",
     highlights: ["সপ্তাহে ৪ দিন ইনটেনসিভ ক্লাস", "১০০% কমন উপযোগী সাজেশন", "প্রচুর মডেল টেস্ট ও সলভ ক্লাস", "দুর্বল শিক্ষার্থীদের জন্য স্পেশাল কেয়ার"],
     pdfs: [
-      { title: "Bangla 1st Paper", desc: "গদ্য ও পদ্য বিশ্লেষণ" },
-      { title: "English Grammar", desc: "Parts of Speech & Tense" },
-      { title: "Mathematics", desc: "পাটিগণিত ও বীজগণিতের বেসিক" },
-      { title: "Science", desc: "বিজ্ঞান ও প্রযুক্তি পরিচিতি" }
+      { title: "Bangla 1st Paper", desc: "গদ্য ও পদ্য বিশ্লেষণ", link: "/pdfs/demo.pdf" },
+      { title: "English Grammar", desc: "Parts of Speech & Tense", link: "/pdfs/demo.pdf" },
+      { title: "Mathematics", desc: "পাটিগণিত ও বীজগণিতের বেসিক", link: "/pdfs/demo.pdf" },
+      { title: "Science", desc: "বিজ্ঞান ও প্রযুক্তি পরিচিতি", link: "/pdfs/demo.pdf" }
     ],
     videos: [
       { subject: "Math", title: "বীজগণিতের প্রাথমিক ধারণা", desc: "ষষ্ঠ শ্রেণির জন্য বীজগণিত।" },
-      { subject: "English", title: "Parts of Speech", desc: "খুব সহজে Parts of Speech মনে রাখার উপায়।" },
+      { subject: "English", title: "Parts of Speech", desc: "খুব সহজে Parts of Speech মনে রাখার উপায়।" },
       { subject: "Science", title: "বিজ্ঞানের মজার পরীক্ষা", desc: "সহজে বিজ্ঞান শেখার কৌশল।" }
     ],
     questions: [
-      { title: "রেসিডেনসিয়াল মডেল স্কুল - ২০২৩", size: "৩ এমবি" },
-      { title: "মতিঝিল আইডিয়াল - ২০২২", size: "২.৫ এমবি" },
-      { title: "সরকারি স্কুল ভর্তি প্রশ্ন ব্যাংক", size: "৬ এমবি" },
-      { title: "এক্সক্লুসিভ মডেল টেস্ট", size: "৪ এমবি" }
+      { title: "রেসিডেনসিয়াল মডেল স্কুল - ২০২৩", size: "৩ এমবি", link: "/pdfs/demo.pdf" },
+      { title: "মতিঝিল আইডিয়াল - ২০২২", size: "২.৫ এমবি", link: "/pdfs/demo.pdf" },
+      { title: "সরকারি স্কুল ভর্তি প্রশ্ন ব্যাংক", size: "৬ এমবি", link: "/pdfs/demo.pdf" },
+      { title: "এক্সক্লুসিভ মডেল টেস্ট", size: "৪ এমবি", link: "/pdfs/demo.pdf" }
     ]
   },
   "class-7": {
     title: "Class 7 Admission Batch",
     description: "সপ্তম শ্রেণিতে ভর্তির পূর্ণাঙ্গ দিকনির্দেশনা ও স্পেশাল ব্যাচ।",
-    schoolDesc1: "সপ্তম শ্রেণিতে নতুন কারিকুলাম অনুযায়ী অ্যাডভান্সড পড়াশোনা ও ভর্তি প্রস্তুতি।",
-    schoolDesc2: "শিক্ষার্থীদের সৃজনশীলতা বৃদ্ধির ওপর আমরা বিশেষ গুরুত্ব দিয়ে থাকি।",
+    schoolDesc1: "সপ্তম শ্রেণিতে নতুন কারিকুলাম অনুযায়ী অ্যাডভান্সড পড়াশোনা ও ভর্তি প্রস্তুতি।",
+    schoolDesc2: "শিক্ষার্থীদের সৃজনশীলতা বৃদ্ধির ওপর আমরা বিশেষ গুরুত্ব দিয়ে থাকি।",
     highlights: ["অভিজ্ঞ শিক্ষক", "ডিজিটাল প্রেজেন্টেশন", "সাপ্তাহিক মূল্যায়ন", "নোটস"],
     pdfs: [
-      { title: "Digital Technology", desc: "বেসিক ধারণা" },
-      { title: "Math", desc: "জ্যামিতি" }
+      { title: "Digital Technology", desc: "বেসিক ধারণা", link: "/pdfs/demo.pdf" },
+      { title: "Math", desc: "জ্যামিতি", link: "/pdfs/demo.pdf" }
     ],
     videos: [
       { subject: "Math", title: "জ্যামিতির খুঁটিনাটি", desc: "সহজ জ্যামিতি।" }
     ],
     questions: [
-      { title: "স্কুল প্রশ্ন ব্যাংক", size: "২.৫ এমবি" }
+      { title: "স্কুল প্রশ্ন ব্যাংক", size: "২.৫ এমবি", link: "/pdfs/demo.pdf" }
     ]
   },
   "class-8": {
     title: "Class 8 Admission Batch",
     description: "অষ্টম শ্রেণিতে জেএসসি ফাউন্ডেশন ও সেরা স্কুলে ভর্তির প্রস্তুতি।",
-    schoolDesc1: "অষ্টম শ্রেণি হলো নবম-দশম শ্রেণির ভিত্তি। এই বেসিক মজবুত করতে আমাদের বিশেষ আয়োজন।",
-    schoolDesc2: "বিজ্ঞান ও গণিতে আমরা স্পেশাল ফোকাস দিয়ে থাকি।",
+    schoolDesc1: "অষ্টম শ্রেণি হলো নবম-দশম শ্রেণির ভিত্তি। এই বেসিক মজবুত করতে আমাদের বিশেষ আয়োজন।",
+    schoolDesc2: "বিজ্ঞান ও গণিতে আমরা স্পেশাল ফোকাস দিয়ে থাকি।",
     highlights: ["সপ্তাহে ৪ দিন ক্লাস", "ফাউন্ডেশন কোর্স", "সাজেশন", "মডেল টেস্ট"],
     pdfs: [
-      { title: "Science", desc: "পরমাণুর গঠন" },
-      { title: "English", desc: "Grammar Rules" }
+      { title: "Science", desc: "পরমাণুর গঠন", link: "/pdfs/demo.pdf" },
+      { title: "English", desc: "Grammar Rules", link: "/pdfs/demo.pdf" }
     ],
     videos: [
       { subject: "Science", title: "পরমাণুর গল্প", desc: "বিজ্ঞানের মজার ভিডিও।" }
     ],
     questions: [
-      { title: "টপ স্কুল প্রশ্ন", size: "৩.৫ এমবি" }
+      { title: "টপ স্কুল প্রশ্ন", size: "৩.৫ এমবি", link: "/pdfs/demo.pdf" }
     ]
   },
   "class-9": {
     title: "Class 9 Admission Batch",
-    description: "নবম শ্রেণিতে বিজ্ঞান, ব্যবসায় শিক্ষা ও মানবিক বিভাগে সেরা স্কুল ও কলেজে ভর্তির প্রস্তুতি।",
-    schoolDesc1: "নবম শ্রেণিতে বিভাগ নির্বাচনের পাশাপাশি ভালো স্কুলে ভর্তি হওয়া ক্যারিয়ারের জন্য একটি টার্নিং পয়েন্ট। নটর ডেম কলেজ (স্কুল শাখা), রাজউক উত্তরা মডেল সহ স্বনামধন্য প্রতিষ্ঠানে ভর্তির জন্য আমাদের এই স্পেশাল আয়োজন।",
+    description: "নবম শ্রেণিতে বিজ্ঞান, ব্যবসায় শিক্ষা ও মানবিক বিভাগে সেরা স্কুল ও কলেজে ভর্তির প্রস্তুতি।",
+    schoolDesc1: "নবম শ্রেণিতে বিভাগ নির্বাচনের পাশাপাশি ভালো স্কুলে ভর্তি হওয়া ক্যারিয়ারের জন্য একটি টার্নিং পয়েন্ট। নটর ডেম কলেজ (স্কুল শাখা), রাজউক উত্তরা মডেল সহ স্বনামধন্য প্রতিষ্ঠানে ভর্তির জন্য আমাদের এই স্পেশাল আয়োজন।",
     schoolDesc2: "বিশেষ করে বিজ্ঞান বিভাগের ফিজিক্স ও কেমিস্ট্রির বেসিক, এবং উচ্চতর গণিতের জন্য আমাদের রয়েছে এক্সপার্ট শিক্ষক প্যানেল।",
-    highlights: ["বিষয়ভিত্তিক স্পেশালিস্ট শিক্ষক", "এডভান্সড লেকচার ম্যাটেরিয়ালস", "বোর্ড স্ট্যান্ড করাদের মেন্টরিং", "২৪/৭ প্রবলেম সলভিং সাপোর্ট"],
+    highlights: ["বিষয়ভিত্তিক স্পেশালিস্ট শিক্ষক", "এডভান্সড লেকচার ম্যাটেরিয়ালস", "বোর্ড স্ট্যান্ড করাদের মেন্টরিং", "২৪/৭ প্রবলেম সলভিং সাপোর্ট"],
     pdfs: [
-      { title: "Physics - 01", desc: "গতির সমীকরণ ও সূত্র" },
-      { title: "Chemistry - 01", desc: "পরমাণুর গঠন" },
-      { title: "Higher Math", desc: "সেট ও ফাংশন" },
-      { title: "Biology", desc: "জীবকোষ ও টিস্যু" }
+      { title: "Physics - 01", desc: "গতির সমীকরণ ও সূত্র", link: "/pdfs/demo.pdf" },
+      { title: "Chemistry - 01", desc: "পরমাণুর গঠন", link: "/pdfs/demo.pdf" },
+      { title: "Higher Math", desc: "সেট ও ফাংশন", link: "/pdfs/demo.pdf" },
+      { title: "Biology", desc: "জীবকোষ ও টিস্যু", link: "/pdfs/demo.pdf" }
     ],
     videos: [
       { subject: "Physics", title: "গতির সূত্রসমূহ", desc: "ফিজিক্সের বেসিক ক্লাস।" },
-      { subject: "Chemistry", title: "পর্যায় সারণি মনে রাখার উপায়", desc: "মজার ছন্দে পর্যায় সারণি।" },
+      { subject: "Chemistry", title: "পর্যায় সারণি মনে রাখার উপায়", desc: "মজার ছন্দে পর্যায় সারণি।" },
       { subject: "Higher Math", title: "সেট এর অংক", desc: "সহজ পদ্ধতিতে সেটের সমাধান।" }
     ],
     questions: [
-      { title: "রাজউক উত্তরা মডেল - ২০২৩", size: "৩.২ এমবি" },
-      { title: "নটর ডেম (স্কুল শাখা) প্রশ্ন", size: "৪ এমবি" },
-      { title: "ভিকারুননিসা ক্লাস ৯ প্রশ্ন", size: "২.৮ এমবি" },
-      { title: "টপ ১০ স্কুল প্রশ্ন সলভ", size: "৭ এমবি" }
+      { title: "রাজউক উত্তরা মডেল - ২০২৩", size: "৩.২ এমবি", link: "/pdfs/demo.pdf" },
+      { title: "নটর ডেম (স্কুল শাখা) প্রশ্ন", size: "৪ এমবি", link: "/pdfs/demo.pdf" },
+      { title: "ভিকারুননিসা ক্লাস ৯ প্রশ্ন", size: "২.৮ এমবি", link: "/pdfs/demo.pdf" },
+      { title: "টপ ১০ স্কুল প্রশ্ন সলভ", size: "৭ এমবি", link: "/pdfs/demo.pdf" }
     ]
   },
   "class-11": {
     title: "Class 11 (College) Admission Batch",
     description: "নটর ডেম, হলিক্রস এবং সেন্ট জোসেফ কলেজে ভর্তির সেরা গাইডলাইন।",
-    schoolDesc1: "এসএসসির পর দেশের শীর্ষ কলেজগুলোতে ভর্তি হওয়ার জন্য এই ব্যাচটি ডিজাইন করা হয়েছে।",
-    schoolDesc2: "কলেজ ভর্তি পরীক্ষার প্রশ্নের প্যাটার্ন অনুযায়ী এক্সক্লুসিভ ক্লাস ও মডেল টেস্ট নেওয়া হয়।",
-    highlights: ["কলেজ ভিত্তিক প্রস্তুতি", "রিটেন ও ভাইভা গাইডলাইন", "প্রিভিয়াস ইয়ার সলভ", "স্পেশালিস্ট মেন্টর"],
+    schoolDesc1: "এসএসসির পর দেশের শীর্ষ কলেজগুলোতে ভর্তি হওয়ার জন্য এই ব্যাচটি ডিজাইন করা হয়েছে।",
+    schoolDesc2: "কলেজ ভর্তি পরীক্ষার প্রশ্নের প্যাটার্ন অনুযায়ী এক্সক্লুসিভ ক্লাস ও মডেল টেস্ট নেওয়া হয়।",
+    highlights: ["কলেজ ভিত্তিক প্রস্তুতি", "রিটেন ও ভাইভা গাইডলাইন", "প্রিভিয়াস ইয়ার সলভ", "স্পেশালিস্ট মেন্টর"],
     pdfs: [
-      { title: "NDC Physics", desc: "নটর ডেম স্পেশাল" },
-      { title: "HCC Chemistry", desc: "হলিক্রস স্পেশাল" }
+      { title: "NDC Physics", desc: "নটর ডেম স্পেশাল", link: "/pdfs/demo.pdf" },
+      { title: "HCC Chemistry", desc: "হলিক্রস স্পেশাল", link: "/pdfs/demo.pdf" }
     ],
     videos: [
       { subject: "Guidance", title: "ভাইভা প্রস্তুতি", desc: "কীভাবে ভাইভা ফেস করবেন।" }
     ],
     questions: [
-      { title: "NDC Admission 2023", size: "৪.৫ এমবি" }
+      { title: "NDC Admission 2023", size: "৪.৫ এমবি", link: "/pdfs/demo.pdf" }
     ]
   }
 };
