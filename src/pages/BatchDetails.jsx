@@ -14,17 +14,6 @@ export default function BatchDetails() {
     window.scrollTo(0, 0);
   }, [batchId]);
 
-  // --- PDF Viewer Function ---
-  const getPdfViewLink = (pdfPath) => {
-    // Localhost e testing er somoy normal path thakbe karon Google local pc access korte pare na
-    if (window.location.hostname === 'localhost') {
-      return pdfPath;
-    }
-    // Live site (Vercel) e thakle Google PDF Viewer er madhyome open hobe
-    const fullUrl = window.location.origin + pdfPath;
-    return `https://docs.google.com/viewer?url=${encodeURIComponent(fullUrl)}`;
-  };
-
   const openModal = (type, itemName = '') => {
     let modalData = {};
     if (type === 'admission') {
@@ -120,19 +109,20 @@ export default function BatchDetails() {
                   <p className="text-xs md:text-sm text-on-surface-variant mb-4">{pdf.desc}</p>
                 </div>
                 
-                {/* আপডেট করা PDF লিংক */}
+                {/* সরাসরি নতুন ট্যাবে PDF ওপেন/ডাউনলোড হবে */}
                 <a 
-                  href={getPdfViewLink(pdf.link || "/pdfs/demo-sheet.pdf")} 
+                  href={pdf.link || "/pdfs/demo-sheet.pdf"} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary font-bold text-sm flex items-center gap-1 group-hover:text-tertiary-fixed-variant transition-colors mt-auto w-fit"
                 >
-                  ফ্রি ভিউ / ডাউনলোড <span className="material-symbols-outlined text-base">visibility</span>
+                  ফ্রি ডাউনলোড <span className="material-symbols-outlined text-base">download</span>
                 </a>
               </div>
             ))}
           </div>
 
+          {/* সমস্ত শিট সংগ্রহের বাটন */}
           <div className="mt-10 flex justify-center">
             <button 
               onClick={() => openModal('pdf_all')}
@@ -190,20 +180,21 @@ export default function BatchDetails() {
                     </div>
                   </div>
                   
-                  {/* আপডেট করা Question লিংক */}
+                  {/* সরাসরি নতুন ট্যাবে PDF ওপেন/ডাউনলোড হবে */}
                   <a 
-                    href={getPdfViewLink(q.link || "/pdfs/demo-question.pdf")} 
+                    href={q.link || "/pdfs/demo-question.pdf"} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-primary hover:bg-primary/10 p-2 rounded-full transition-colors flex items-center"
-                    title="ফ্রি ভিউ / ডাউনলোড"
+                    title="ফ্রি ডাউনলোড"
                   >
-                    <span className="material-symbols-outlined">visibility</span>
+                    <span className="material-symbols-outlined">download</span>
                   </a>
                 </div>
               ))}
             </div>
 
+            {/* সমস্ত প্রশ্ন সংগ্রহের বাটন */}
             <div className="mt-8 flex justify-center border-t border-outline-variant/10 pt-8">
               <button 
                 onClick={() => openModal('question_all')}
