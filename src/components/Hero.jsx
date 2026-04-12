@@ -73,9 +73,9 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 pt-2 md:pt-4">
               <a
                 href="#courses"
-                className="inline-block bg-surface-container-lowest text-primary px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg hover:shadow-xl transition-all"
+                className="inline-block bg-surface-container-lowest text-primary px-6 py-3 md:px-8 md:py-4 rounded-xl font-extrabold text-base md:text-lg hover:shadow-xl transition-all"
               >
-                আজই ভর্তি হন
+              ব্যাচ সমূহ
               </a>
               <a
                 href="#materials"

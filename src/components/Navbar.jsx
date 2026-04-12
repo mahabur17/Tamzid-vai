@@ -40,7 +40,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link smooth to="/#" className="text-2xl font-black text-primary tracking-tight">
-          তামজিদ একাডেমি
+          তামজীদ ইসলাম
         </Link>
         
         {/* Desktop Menu Links */}
