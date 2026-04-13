@@ -9,7 +9,7 @@ export default function Navbar() {
     { name: 'হোম', to: '/#' }, 
     { name: 'কোর্সসমূহ', to: '/#courses' },
     { name: 'প্রতিষ্ঠান রিভিউ', to: '/#college-info' },
-    { name: 'রিভিউ', to: '/#reviews' },
+    { name: 'সাফল্যের গল্প', to: '/#reviews' },
     { name: 'যোগাযোগ', to: '/#contact' },
   ];
 

@@ -8,50 +8,48 @@ const colleges = [
     name: 'ঢাকা রেসিডেনসিয়াল মডেল কলেজ',
     type: 'স্কুল ও কলেজ',
     location: 'মোহাম্মদপুর, ঢাকা',
-    image: '/images/drmc1.png',
-  },
-  {
-    id: 'ndc',
-    name: 'নটর ডেম কলেজ',
-    type: 'কলেজ',
-    location: 'মতিঝিল, ঢাকা',
-    image: '/images/ndcbanner.png',
-  },
-  {
-    id: 'hcc',
-    name: 'হলিক্রস কলেজ',
-    type: 'কলেজ',
-    location: 'তেজগাঁও, ঢাকা',
-    image: '/images/holybanner.jpg',
+    image: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop', // DRMC related representative image
   },
   {
     id: 'sjc',
-    name: 'সেন্ট জোসেফ কলেজ',
+    name: 'সেন্ট জোসেফ উচ্চ মাধ্যমিক বিদ্যালয়',
     type: 'স্কুল ও কলেজ',
     location: 'মোহাম্মদপুর, ঢাকা',
-    image: '/images/josephbanner.jpg',
+    image: 'https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=1000&auto=format&fit=crop', // St. Joseph related representative image
   },
   {
-    id: 'ideal',
-    name: 'আইডিয়াল স্কুল এন্ড কলেজ',
+    id: 'baf-shaheen',
+    name: 'বিএএফ শাহীন কলেজ',
     type: 'স্কুল ও কলেজ',
-    location: 'মতিঝিল, ঢাকা',
-    image: '/images/ideal1.jpg',
+    location: 'ঢাকা ক্যান্টনমেন্ট, ঢাকা',
+    image: 'https://images.unsplash.com/photo-1523050853023-8c2d27443ef8?q=80&w=1000&auto=format&fit=crop', // BAF Shaheen related representative image
   },
   {
-    id: 'vnsc',
-    name: 'ভিকারুননিসা নূন স্কুল',
+    id: 'noor-mohammad',
+    name: 'বীরশ্রেষ্ঠ নূর মোহাম্মদ পাবলিক কলেজ',
     type: 'স্কুল ও কলেজ',
-    location: 'বেইলি রোড, ঢাকা',
-    image: '/images/vqbanner.jpg',
+    location: 'পিলখানা, ঢাকা',
+    image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1000&auto=format&fit=crop', // Noor Mohammad related representative image
+  },
+  {
+    id: 'adamjee',
+    name: 'আদমজী ক্যান্টনমেন্ট কলেজ',
+    type: 'কলেজ',
+    location: 'ঢাকা ক্যান্টনমেন্ট, ঢাকা',
+    image: 'https://images.unsplash.com/photo-1525921429624-479b6a29d840?q=80&w=1000&auto=format&fit=crop', // Adamjee related representative image
+  },
+  {
+    id: 'rajuk',
+    name: 'রাজউক উত্তরা মডেল কলেজ',
+    type: 'স্কুল ও কলেজ',
+    location: 'উত্তরা, ঢাকা',
+    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000&auto=format&fit=crop', // Rajuk related representative image
   }
 ];
 
 export default function CollegeReviews() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  
-  // সোয়াইপ ট্র্যাক করার জন্য নতুন স্টেট
   const [touchStartX, setTouchStartX] = useState(0);
   
   useEffect(() => {
@@ -61,29 +59,24 @@ export default function CollegeReviews() {
       setCurrentIndex((prevIndex) => {
         return prevIndex === colleges.length - 1 ? 0 : prevIndex + 1;
       });
-    }, 2000);
+    }, 2500); // স্লাইড টাইম সামান্য বাড়ানো হয়েছে রিডিবিলিটির জন্য
 
     return () => clearInterval(timer);
   }, [isHovered]);
 
-  // Touch Start Handler
   const handleTouchStart = (e) => {
-      setIsHovered(true); // অটো-স্লাইড বন্ধ করবে
-      setTouchStartX(e.touches[0].clientX); // শুরুর পজিশন সেভ করবে
+      setIsHovered(true);
+      setTouchStartX(e.touches[0].clientX);
   };
 
-  // Touch End Handler
   const handleTouchEnd = (e) => {
-      setIsHovered(false); // অটো-স্লাইড আবার চালু করবে
-      const touchEndX = e.changedTouches[0].clientX; // শেষের পজিশন
-      const diff = touchStartX - touchEndX; // দূরত্বের পার্থক্য
+      setIsHovered(false);
+      const touchEndX = e.changedTouches[0].clientX;
+      const diff = touchStartX - touchEndX;
 
-      // যদি পার্থক্য 50px এর বেশি হয়, তার মানে ইউজার সত্যিই সোয়াইপ করেছে
       if (diff > 50) {
-          // ডান থেকে বামে সোয়াইপ (Next Card)
           setCurrentIndex((prevIndex) => prevIndex === colleges.length - 1 ? 0 : prevIndex + 1);
       } else if (diff < -50) {
-          // বাম থেকে ডানে সোয়াইপ (Previous Card)
           setCurrentIndex((prevIndex) => prevIndex === 0 ? colleges.length - 1 : prevIndex - 1);
       }
   };
@@ -104,7 +97,6 @@ export default function CollegeReviews() {
                 className="w-[350px] md:w-[732px] lg:w-[1114px] mx-auto overflow-hidden py-2 md:py-4 cursor-grab active:cursor-grabbing"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                // এখানে নতুন টাচ ইভেন্টগুলো কল করা হয়েছে
                 onTouchStart={handleTouchStart}
                 onTouchEnd={handleTouchEnd}
             >
@@ -112,9 +104,9 @@ export default function CollegeReviews() {
                     className="flex gap-8 transition-transform duration-700 ease-in-out"
                     style={{ transform: `translateX(-${currentIndex * 382}px)` }}
                 >
+                    {/* লুপের জন্য ডাবল লিস্ট রাখা হয়েছে যাতে স্মুথ ট্রানজিশন পাওয়া যায় */}
                     {[...colleges, ...colleges].map((college, index) => (
                         <div key={index} className="w-[350px] flex-shrink-0 pointer-events-none md:pointer-events-auto">
-                            {/* pointer-events-none মোবাইলে দেওয়া হয়েছে যাতে সোয়াইপ করার সময় কার্ডের ভিতরের টেক্সট বা লিংকে ভুলে চাপ না লেগে যায় */}
                             <div className="bg-surface-container-lowest rounded-[1.5rem] shadow-sm hover:shadow-xl transition-all group border border-outline-variant/20 overflow-hidden flex flex-col h-full pointer-events-auto">
                                 
                                 <div className="h-40 md:h-48 relative overflow-hidden">
@@ -152,7 +144,7 @@ export default function CollegeReviews() {
                 </div>
             </div>
 
-            {/* ডটস (Dots) ইন্ডিকেটর */}
+            {/* Dots Indicator */}
             <div className="flex justify-center gap-2 mt-6 md:mt-12">
                 {colleges.map((_, index) => (
                     <button
