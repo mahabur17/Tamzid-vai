@@ -13,100 +13,96 @@ const students = [
 export default function SuccessStories() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  
-  // সোয়াইপ ট্র্যাক করার জন্য স্টেট
   const [touchStartX, setTouchStartX] = useState(0);
-  
+
   useEffect(() => {
     if (isHovered) return; 
-    
     const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => {
-        return prevIndex === students.length - 1 ? 0 : prevIndex + 1;
-      });
-    }, 2000);
-
+      setCurrentIndex((prevIndex) => (prevIndex === students.length - 1 ? 0 : prevIndex + 1));
+    }, 3000);
     return () => clearInterval(timer);
-  }, [isHovered]); 
+  }, [isHovered]);
 
-  // Touch Start Handler
   const handleTouchStart = (e) => {
-      setIsHovered(true);
-      setTouchStartX(e.touches[0].clientX);
+    setIsHovered(true);
+    setTouchStartX(e.touches[0].clientX);
   };
 
-  // Touch End Handler
   const handleTouchEnd = (e) => {
-      setIsHovered(false);
-      const touchEndX = e.changedTouches[0].clientX;
-      const diff = touchStartX - touchEndX;
-
-      if (diff > 50) {
-          // Swipe Left (Next)
-          setCurrentIndex((prevIndex) => prevIndex === students.length - 1 ? 0 : prevIndex + 1);
-      } else if (diff < -50) {
-          // Swipe Right (Previous)
-          setCurrentIndex((prevIndex) => prevIndex === 0 ? students.length - 1 : prevIndex - 1);
-      }
+    setIsHovered(false);
+    const touchEndX = e.changedTouches[0].clientX;
+    const diff = touchStartX - touchEndX;
+    if (diff > 50) setCurrentIndex((prevIndex) => prevIndex === students.length - 1 ? 0 : prevIndex + 1);
+    else if (diff < -50) setCurrentIndex((prevIndex) => prevIndex === 0 ? students.length - 1 : prevIndex - 1);
   };
 
   return (
-    // মোবাইলের জন্য প্যাডিং কমানো হয়েছে (py-12)
-    <section className="py-12 md:py-24 bg-surface px-4 md:px-8" id="reviews">
-        <div className="max-w-7xl mx-auto">
-            {/* মোবাইলের জন্য ফন্ট ও মার্জিন অপটিমাইজ করা হয়েছে */}
-            <h2 className="text-2xl md:text-4xl font-black text-primary mb-10 md:mb-16 text-center">সাফল্যের গল্প</h2>
-
-            {/* Carousel Container */}
-            <div 
-                className="w-[350px] md:w-[748px] lg:w-[1146px] mx-auto overflow-hidden py-4 cursor-grab active:cursor-grabbing"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                // টাচ ইভেন্টগুলো যুক্ত করা হলো
-                onTouchStart={handleTouchStart}
-                onTouchEnd={handleTouchEnd}
-            >
-                <div
-                    className="flex gap-12 transition-transform duration-700 ease-in-out"
-                    style={{ transform: `translateX(-${currentIndex * 398}px)` }}
-                >
-                    {[...students, ...students].map((student, index) => (
-                        <div key={index} className="w-[350px] flex-shrink-0 relative pt-12 pointer-events-none md:pointer-events-auto">
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-surface overflow-hidden shadow-xl z-10">
-                                <img className="w-full h-full object-cover" alt={student.name} src={student.img}/>
-                            </div>
-                            <div className="h-full bg-surface-container-lowest p-6 md:p-8 pt-14 md:pt-16 rounded-[1.5rem] md:rounded-[2rem] text-center shadow-md border border-outline-variant/10 whitespace-normal flex flex-col pointer-events-auto">
-                                <div className="text-tertiary mb-3 md:mb-4">
-                                    <span className="material-symbols-outlined text-3xl md:text-4xl" style={{fontVariationSettings: "'FILL' 1"}}>format_quote</span>
-                                </div>
-                                <p className="text-on-surface-variant text-sm md:text-base italic mb-4 md:mb-6 leading-relaxed flex-grow">
-                                    "{student.quote}"
-                                </p>
-                                <div className="mt-auto">
-                                    <h4 className="text-lg md:text-xl font-bold text-primary">{student.name}</h4>
-                                    <p className="text-secondary text-xs md:text-sm font-medium mt-1">{student.dept}</p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            {/* ডটস (Dots) ইন্ডিকেটর */}
-            <div className="flex justify-center gap-2 mt-8 md:mt-12">
-                {students.map((_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => setCurrentIndex(index)}
-                        className={`h-2.5 md:h-3 rounded-full transition-all duration-500 ${
-                            currentIndex === index ? 'bg-primary w-8 md:w-10' : 'bg-outline-variant/50 w-2.5 md:w-3 hover:bg-primary/50'
-                        }`}
-                        aria-label={`Go to slide ${index + 1}`}
-                    />
-                ))}
-            </div>
-
+    <section className="py-16 md:py-28 bg-surface px-4 md:px-8 overflow-hidden" id="reviews">
+      <div className="max-w-7xl mx-auto">
+        
+        {/* --- Updated Header Section --- */}
+        <div className="flex flex-col items-center mb-12 md:mb-20">
+          {/* Green Pill Header */}
+          <div className="inline-flex items-center px-6 py-2 rounded-full bg-[#CCE8E1] text-[#2D4D44] mb-6 shadow-sm">
+            <h2 className="text-xl md:text-2xl font-bold">
+              সাফল্যের গল্প
+            </h2>
+          </div>
+          {/* Description Text */}
+          <p className="text-on-surface-variant/80 text-sm md:text-base text-center max-w-lg leading-relaxed">
+            তামজিদ একাডেমির হাত ধরে দেশসেরা বিশ্ববিদ্যালয়গুলোতে চান্স পাওয়া আমাদের কৃতী শিক্ষার্থীদের কিছু অভিজ্ঞতা।
+          </p>
         </div>
+
+        {/* Carousel Container */}
+        <div 
+          className="w-full max-w-[1146px] mx-auto overflow-hidden py-4 cursor-grab active:cursor-grabbing"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
+          <div
+            className="flex gap-6 md:gap-12 transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * (window.innerWidth < 768 ? 374 : 398)}px)` }}
+          >
+            {[...students, ...students].map((student, index) => (
+              <div key={index} className="w-[350px] flex-shrink-0 relative pt-12">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-surface overflow-hidden shadow-xl z-10">
+                  <img className="w-full h-full object-cover" alt={student.name} src={student.img}/>
+                </div>
+                <div className="h-full bg-surface-container-lowest p-6 md:p-8 pt-14 md:pt-16 rounded-[2rem] text-center shadow-md border border-outline-variant/10 flex flex-col">
+                  <div className="text-tertiary/20 mb-2">
+                    <span className="material-symbols-outlined text-5xl md:text-6xl" style={{fontVariationSettings: "'FILL' 1"}}>format_quote</span>
+                  </div>
+                  <p className="text-on-surface-variant text-sm md:text-base italic mb-6 leading-relaxed flex-grow">
+                    "{student.quote}"
+                  </p>
+                  <div className="mt-auto pt-4 border-t border-outline-variant/5">
+                    <h4 className="text-lg md:text-xl font-bold text-primary">{student.name}</h4>
+                    <p className="text-secondary text-xs md:text-sm font-semibold mt-1 uppercase tracking-tight">{student.dept}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Dots Indicator */}
+        <div className="flex justify-center gap-2.5 mt-10 md:mt-16">
+          {students.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`h-2.5 rounded-full transition-all duration-500 ${
+                currentIndex === index ? 'bg-primary w-10 shadow-lg' : 'bg-outline-variant/40 w-2.5 hover:bg-primary/40'
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+
+      </div>
     </section>
   );
 }

@@ -1,13 +1,26 @@
+// src/components/ScrollToTop.jsx
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 export default function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    // যখনই URL বা পাথ চেঞ্জ হবে, উইন্ডো স্ক্রল করে একদম উপরে (0,0) চলে যাবে
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    // যদি URL-এ কোনো hash (যেমন #contact বা #reviews) না থাকে, তাহলেই শুধু উপরে স্ক্রল করবে
+    if (!hash) {
+      window.scrollTo(0, 0);
+    } else {
+      // Hash থাকলে নির্দিষ্ট সেকশনে যাওয়ার জন্য একটু সময় (delay) দেওয়া হলো, 
+      // যাতে অন্য পেজ থেকে হোম পেজ সম্পূর্ণ লোড হওয়ার পর সে আইডিটা খুঁজে পায়।
+      setTimeout(() => {
+        const id = hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // 100ms delay for smooth rendering
+    }
+  }, [pathname, hash]);
 
-  return null; // এই কম্পোনেন্ট স্ক্রিনে কিছুই দেখাবে না, শুধু ব্যাকগ্রাউন্ডে কাজ করবে
+  return null;
 }
